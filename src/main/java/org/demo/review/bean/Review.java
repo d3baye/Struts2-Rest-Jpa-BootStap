@@ -1,6 +1,6 @@
 /*
  * Dto class 
- * Created on 17 déc. 2012 ( Time 15:40:00 )
+ * Created on 17 dï¿½c. 2012 ( Time 15:40:00 )
  */
 // This Bean has a composite Primary Key  
 
@@ -19,7 +19,7 @@ import java.util.Date;
 import javax.persistence.*;
 
 @Entity
-@Table(name="REVIEW", schema="ROOT" )
+@Table(name="REVIEW" )
 public class Review implements Serializable
 {
     private static final long serialVersionUID = 1L;

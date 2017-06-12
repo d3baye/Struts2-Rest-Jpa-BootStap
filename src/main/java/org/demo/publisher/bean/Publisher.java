@@ -1,6 +1,6 @@
 /*
  * Dto class 
- * Created on 17 déc. 2012 ( Time 15:40:00 )
+ * Created on 17 dï¿½c. 2012 ( Time 15:40:00 )
  */
 // This Bean has a basic Primary Key (not composite) 
 
@@ -17,7 +17,7 @@ import org.hibernate.validator.constraints.* ;
 import javax.persistence.*;
 
 @Entity
-@Table(name="PUBLISHER", schema="ROOT" )
+@Table(name="PUBLISHER" )
 public class Publisher implements Serializable
 {
     private static final long serialVersionUID = 1L;

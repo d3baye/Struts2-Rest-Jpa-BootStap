@@ -1,6 +1,6 @@
 /*
  * Dto class 
- * Created on 17 déc. 2012 ( Time 15:40:01 )
+ * Created on 17 dï¿½c. 2012 ( Time 15:40:01 )
  */
 // This Bean has a basic Primary Key (not composite) 
 
@@ -18,7 +18,7 @@ import java.util.Date;
 import javax.persistence.*;
 
 @Entity
-@Table(name="WORKGROUP", schema="ROOT" )
+@Table(name="WORKGROUP")
 public class Workgroup implements Serializable
 {
     private static final long serialVersionUID = 1L;

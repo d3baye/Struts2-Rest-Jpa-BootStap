@@ -1,6 +1,6 @@
 /*
  * Dto key class 
- * Created on 17 déc. 2012 ( Time 15:40:00 )
+ * Created on 17 dï¿½c. 2012 ( Time 15:40:00 )
  */
 
 package org.demo.review.bean;
@@ -60,6 +60,46 @@ public class ReviewKey implements Serializable
     {
         return this.bookId;
     }
+
+	/* (non-Javadoc)
+	 * @see java.lang.Object#hashCode()
+	 */
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + bookId;
+		result = prime * result + ((customerCode == null) ? 0 : customerCode.hashCode());
+		return result;
+	}
+
+	/* (non-Javadoc)
+	 * @see java.lang.Object#equals(java.lang.Object)
+	 */
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj) {
+			return true;
+		}
+		if (obj == null) {
+			return false;
+		}
+		if (!(obj instanceof ReviewKey)) {
+			return false;
+		}
+		ReviewKey other = (ReviewKey) obj;
+		if (bookId != other.bookId) {
+			return false;
+		}
+		if (customerCode == null) {
+			if (other.customerCode != null) {
+				return false;
+			}
+		} else if (!customerCode.equals(other.customerCode)) {
+			return false;
+		}
+		return true;
+	}
 
 
     

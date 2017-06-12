@@ -1,6 +1,6 @@
 /*
  * Dto key class 
- * Created on 17 déc. 2012 ( Time 15:40:00 )
+ * Created on 17 dï¿½c. 2012 ( Time 15:40:00 )
  */
 
 package org.demo.employeegroup.bean;
@@ -59,6 +59,46 @@ public class EmployeeGroupKey implements Serializable
     {
         return this.groupId;
     }
+
+	/* (non-Javadoc)
+	 * @see java.lang.Object#hashCode()
+	 */
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + ((employeeCode == null) ? 0 : employeeCode.hashCode());
+		result = prime * result + groupId;
+		return result;
+	}
+
+	/* (non-Javadoc)
+	 * @see java.lang.Object#equals(java.lang.Object)
+	 */
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj) {
+			return true;
+		}
+		if (obj == null) {
+			return false;
+		}
+		if (!(obj instanceof EmployeeGroupKey)) {
+			return false;
+		}
+		EmployeeGroupKey other = (EmployeeGroupKey) obj;
+		if (employeeCode == null) {
+			if (other.employeeCode != null) {
+				return false;
+			}
+		} else if (!employeeCode.equals(other.employeeCode)) {
+			return false;
+		}
+		if (groupId != other.groupId) {
+			return false;
+		}
+		return true;
+	}
 
 
     

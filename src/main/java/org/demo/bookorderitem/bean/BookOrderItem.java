@@ -1,6 +1,6 @@
 /*
  * Dto class 
- * Created on 17 déc. 2012 ( Time 15:39:59 )
+ * Created on 17 dï¿½c. 2012 ( Time 15:39:59 )
  */
 // This Bean has a composite Primary Key  
 
@@ -19,7 +19,7 @@ import java.math.BigDecimal;
 import javax.persistence.*;
 
 @Entity
-@Table(name="BOOK_ORDER_ITEM", schema="ROOT" )
+@Table(name="BOOK_ORDER_ITEM" )
 public class BookOrderItem implements Serializable
 {
     private static final long serialVersionUID = 1L;
@@ -30,8 +30,7 @@ public class BookOrderItem implements Serializable
 	@EmbeddedId
     private BookOrderItemKey key;
 
-
-    //----------------------------------------------------------------------
+	//----------------------------------------------------------------------
     // ENTITY FIELDS 
     //----------------------------------------------------------------------    
     @Column(name="QUANTITY", nullable=false)

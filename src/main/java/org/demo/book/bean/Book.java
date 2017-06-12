@@ -1,6 +1,6 @@
 /*
  * Dto class 
- * Created on 17 déc. 2012 ( Time 15:39:59 )
+ * Created on 17 dï¿½c. 2012 ( Time 15:39:59 )
  */
 // This Bean has a basic Primary Key (not composite) 
 
@@ -18,7 +18,7 @@ import java.math.BigDecimal;
 import javax.persistence.*;
 
 @Entity
-@Table(name="BOOK", schema="ROOT" )
+@Table(name="BOOK")
 public class Book implements Serializable
 {
     private static final long serialVersionUID = 1L;

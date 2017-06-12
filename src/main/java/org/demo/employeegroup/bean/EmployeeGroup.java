@@ -1,6 +1,6 @@
 /*
  * Dto class 
- * Created on 17 déc. 2012 ( Time 15:40:00 )
+ * Created on 17 dï¿½c. 2012 ( Time 15:40:00 )
  */
 // This Bean has a composite Primary Key  
 
@@ -18,7 +18,7 @@ import org.hibernate.validator.constraints.* ;
 import javax.persistence.*;
 
 @Entity
-@Table(name="EMPLOYEE_GROUP", schema="ROOT" )
+@Table(name="EMPLOYEE_GROUP")
 public class EmployeeGroup implements Serializable
 {
     private static final long serialVersionUID = 1L;

@@ -1,6 +1,6 @@
 /*
  * Dto key class 
- * Created on 17 déc. 2012 ( Time 15:39:59 )
+ * Created on 17 dï¿½c. 2012 ( Time 15:39:59 )
  */
 
 package org.demo.bookorderitem.bean;
@@ -60,6 +60,42 @@ public class BookOrderItemKey implements Serializable
     {
         return this.bookId;
     }
+
+	/* (non-Javadoc)
+	 * @see java.lang.Object#hashCode()
+	 */
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + bookId;
+		result = prime * result + bookOrderId;
+		return result;
+	}
+
+	/* (non-Javadoc)
+	 * @see java.lang.Object#equals(java.lang.Object)
+	 */
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj) {
+			return true;
+		}
+		if (obj == null) {
+			return false;
+		}
+		if (!(obj instanceof BookOrderItemKey)) {
+			return false;
+		}
+		BookOrderItemKey other = (BookOrderItemKey) obj;
+		if (bookId != other.bookId) {
+			return false;
+		}
+		if (bookOrderId != other.bookOrderId) {
+			return false;
+		}
+		return true;
+	}
 
 
     
